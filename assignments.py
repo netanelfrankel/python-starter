@@ -51,7 +51,7 @@ def ex_5():
 def ex_6(): 
     myList = [11, 100, 101, 999, 1001]
     for i in range(int(len(myList)/2)):
-        myList[i], myList[len(myList)-i-1] = myList[len(myList)-i-1], myList[i]
+        myList[i], myList[-1-i] = myList[-1-i], myList[i]
     print(myList)
 
 def ex_7():
@@ -148,7 +148,7 @@ def ex_13():
 # ex_3()
 # ex_4()
 # ex_5()
-# ex_6()
+ex_6()
 # ex_7()
 # ex_8()
 # ex_9()
