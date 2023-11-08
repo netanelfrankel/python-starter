@@ -16,66 +16,66 @@ def ex_1():
 
 
 
-# def ex_2():
-#     width = input("Enter width:")
-#     length = input("Enter length: ")
-#     height = input("Enter height: ")
+def ex_2():
+    width = input("Enter width:")
+    length = input("Enter length: ")
+    height = input("Enter height: ")
 
-#     width = float(width)
-#     length = float(length)
-#     height = float(height)
+    width = float(width)
+    length = float(length)
+    height = float(height)
     
-#     print(f'Volume is: {width * length * height}')
+    print(f'Volume is: {width * length * height}')
 
-# def ex_3():
-#     str = input("Enter a list of numbers ex 1,2,3 : ")
-#     nums = str.split(',')
-#     print(int(nums[0]) == int(nums[len(nums)-1]))
+def ex_3():
+    str = input("Enter a list of numbers ex 1,2,3 : ")
+    nums = str.split(',')
+    print(int(nums[0]) == int(nums[-1]))
 
-# def ex_4():
-#     txt = "Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to ABC programming language, which was inspired by SETL capable of exception handling and interfacing with the Amoeba operating system. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his permanent vacation from his responsibilities as Python's Benevolent Dictator For Life, a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker. In January 2019, active Python core developers elected a 5-member Steering Council to lead the project. As of 2021, the current members of this council are Barry Warsaw, Brett Cannon, Carol Willing, Thomas Wouters, and Pablo Galindo Salgado."
-#     words = txt.split(' ')
-#     pattern = re.compile("^Python$")
-#     cnt = 0
-#     for word in words:
-#         if pattern.match(word):
-#             cnt += 1
-#     print(cnt)
+def ex_4():
+    txt = "Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to ABC programming language, which was inspired by SETL capable of exception handling and interfacing with the Amoeba operating system. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his permanent vacation from his responsibilities as Python's Benevolent Dictator For Life, a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker. In January 2019, active Python core developers elected a 5-member Steering Council to lead the project. As of 2021, the current members of this council are Barry Warsaw, Brett Cannon, Carol Willing, Thomas Wouters, and Pablo Galindo Salgado."
+    words = txt.split(' ')
+    pattern = re.compile("^Python$")
+    cnt = 0
+    for word in words:
+        if pattern.match(word):
+            cnt += 1
+    print(cnt)
 
-# def ex_5():
-#     myList = [1,2,3]
-#     mySet = {3,4,5}
-#     mySet.update(myList)
-#     print(mySet)
+def ex_5():
+    myList = [1,2,3]
+    mySet = {3,4,5}
+    mySet.update(myList)
+    print(mySet)
 
-# def ex_6(): 
-#     myList = [11, 100, 101, 999, 1001]
-#     for i in range(int(len(myList)/2)):
-#         myList[i], myList[len(myList)-i-1] = myList[len(myList)-i-1], myList[i]
-#     print(myList)
+def ex_6(): 
+    myList = [11, 100, 101, 999, 1001]
+    for i in range(int(len(myList)/2)):
+        myList[i], myList[len(myList)-i-1] = myList[len(myList)-i-1], myList[i]
+    print(myList)
 
-# def ex_7():
-#     random_number = random.randint(1,100)
-#     if random_number < 10:
-#         print(f'{random_number} you lose')
-#     elif 50 > random_number >= 10:
-#         print(f'{random_number} try again')
-#     else:
-#         print(f'{random_number} you win')
+def ex_7():
+    random_number = random.randint(1,100)
+    if random_number < 10:
+        print(f'{random_number} you lose')
+    elif 50 > random_number >= 10:
+        print(f'{random_number} try again')
+    else:
+        print(f'{random_number} you win')
 
-# def ex_8():
-#     myList = [6,2,7,3,-33,77,7,1]
-#     mx = sys.maxsize
-#     for i in range(len(myList)):
-#         if myList[i]<mx:
-#             mx = myList[i]
-#     print(mx)
+def ex_8():
+    myList = [6,2,7,3,-33,77,7,1]
+    mx = sys.maxsize
+    for i in range(len(myList)):
+        if myList[i]<mx:
+            mx = myList[i]
+    print(mx)
     
-# def ex_9():
-#     word1_is_upper ="HELLO"
-#     word2_is_not_upper="world"
-#     print(word1_is_upper.isupper())
-#     print(word2_is_not_upper.isupper())
+def ex_9():
+    word1_is_upper ="HELLO"
+    word2_is_not_upper="world"
+    print(word1_is_upper.isupper())
+    print(word2_is_not_upper.isupper())
 
 def ex_10():
     mySet = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
@@ -142,6 +142,7 @@ def ex_13():
 #     return
 # def ex_20():
 #     return        
+
 #ex_1()
 # ex_2()
 # ex_3()
@@ -159,5 +160,5 @@ def ex_13():
 # ex_102()
 # ex_11()
 # ex_12()
-ex_13()
+# ex_13()
 
